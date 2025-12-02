@@ -14,8 +14,6 @@ void main() {
   runApp(const MyApp());
 }
 
-// === FUNÇÕES DE BANCO E JSON ===============================================
-
 Future<Database> createDatabase() async {
   final databasePath = await getDatabasesPath();
   final dbPath = path.join(databasePath, '202310010e202310105.db');
@@ -54,8 +52,6 @@ Future<Database> createDatabase() async {
 String tarefaToJson(Map<String, dynamic> tarefa) {
   return jsonEncode(tarefa);
 }
-
-// === APP ====================================================================
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
