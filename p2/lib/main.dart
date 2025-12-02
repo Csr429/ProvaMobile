@@ -131,7 +131,8 @@ class _TarefasPageState extends State<TarefasPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Cadastro de Tarefas')),
+      appBar:
+          AppBar(title: const Text('Cadastro de Tarefas')),
       body: tarefas.isEmpty
           ? const Center(child: Text('Nenhuma tarefa cadastrada.'))
           : ListView.builder(
@@ -284,6 +285,7 @@ class _TarefaFormPageState extends State<TarefaFormPage> {
       'criadoEm': _dataCriacao ?? DateTime.now().toIso8601String(),
     };
 
+    // Gera e imprime o JSON da tarefa criada/atualizada
     final json = tarefaToJson(data);
     print('TAREFA JSON: $json');
 
