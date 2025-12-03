@@ -7,8 +7,7 @@ import 'package:intl/intl.dart';
 
 const Color primaryColor = Colors.lightBlue;
 const Color secondaryColor = Colors.cyan;
-const Color iceBlueBackground = Color(0xFFF0F8FF);
-
+const Color iceBlueBackground = Color.fromARGB(255, 200,233,233);
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
